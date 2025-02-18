@@ -1,0 +1,28 @@
+What do Data Engineers do?
+
+Imagine that you are hired to enable data analytics; where would you start?
+How would you go about gathering requirements? 
+Hint: Think backward from what the business may need. 
+Share your assignment with me by creating a repo 
+(like this one if you haven't already) and 
+writing down your notes/code under the folder for lesson 1.
+
+The first two things would be to schedule a meeting with the target stakeholders and begin
+diving into the schemas/data models of the current architecture.  Understand what kind of analysis 
+the stakeholders are striving for and see if the current data resides within the system.
+
+If the current data is not within the current OLAP setup, then is that data available to our
+extraction routines.  If not, meet with the developers to design a way to get the information
+requested.
+
+If the data is available - determine how to present it to the stakeholder.  Dashboards, 
+timely reports, or just is just having the data available for them enough and they'll
+design the reports.  Does the data only live in the OLTP and not in the OLAP?  If so, why?
+
+Understand the timelines of the stakeholders:
+    How soon do they want this analysis?
+    How often is the analysis to be run?
+    Refresh rate on the data (is it streaming or batch - how often is the batch run)
+    For internal/external use?  Does PII or propietary data need to be scrubbed first?
+    
+    
